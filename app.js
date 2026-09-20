@@ -25,12 +25,14 @@ function safeArtifactUrl(value) {
 function activateArtifact(card, artifact, release) {
   const url = safeArtifactUrl(artifact.url);
   if (!url || !/^sha256:[a-f0-9]{64}$/i.test(String(artifact.sha256 || ''))) return;
-  const button = card.querySelector('button');
+  const button = card.querySelector('button, a.download-action');
   const code = card.querySelector('code');
-  button.disabled = false;
+  if (!button) return;
+  if ('disabled' in button) button.disabled = false;
   button.classList.add('ready');
-  button.textContent = `Baixar ${release.version}`;
-  button.onclick = () => { window.location.href = url; };
+  button.textContent = `Baixar Aurem ${release.version}`;
+  if (button.tagName === 'A') button.href = url;
+  else button.onclick = () => { window.location.href = url; };
   code.textContent = `${formatBytes(artifact.sizeBytes)} · ${artifact.sha256.slice(0, 22)}…`;
 }
 async function loadRelease() {
