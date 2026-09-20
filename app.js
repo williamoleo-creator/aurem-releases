@@ -50,7 +50,9 @@ async function loadRelease() {
     }
     for (const card of cards) {
       const platform = card.dataset.platform;
-      const artifact = (release.artifacts || []).find((item) => item.platform === platform);
+      const artifacts = release.artifacts || [];
+      const artifact = artifacts.find((item) => item.platform === platform && item.kind === 'setup-exe')
+        || artifacts.find((item) => item.platform === platform);
       if (artifact) activateArtifact(card, artifact, release);
     }
     releaseStatus.textContent = `Founder channel // ${release.version} // assinatura presente // ${payload.keyId.slice(0, 28)}…`;
