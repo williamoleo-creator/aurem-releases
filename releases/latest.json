@@ -4,7 +4,7 @@
     "status": "ready",
     "version": "0.29.2",
     "channel": "founder",
-    "issuedAt": "2026-09-20T03:30:44.717Z",
+    "issuedAt": "2026-09-20T18:24:18.885Z",
     "rollout": {
       "percentage": 100,
       "autoApply": true,
@@ -18,8 +18,8 @@
         "platform": "windows",
         "kind": "setup-exe",
         "url": "https://github.com/williamoleo-creator/aurem-releases/releases/download/v0.29.2/Aurem-Setup-0.29.2.exe",
-        "sha256": "sha256:27f29f7449b6e8c161af605023dce0326bc47c27c451d03cfbd22af7b2ed2352",
-        "sizeBytes": 36352,
+        "sha256": "sha256:a48f15c6a91dc528b57e158fab36eb26610144bbffd0be498607505603e933ee",
+        "sizeBytes": 37888,
         "signerSha256": null
       },
       {
@@ -33,5 +33,5 @@
     ]
   },
   "keyId": "aurem-release:bee72f9990cbf87da213590daa4d5f41da4640ae8949419acbd0858f49d51b5c",
-  "signature": "xhCy70zLrNOg1H9C2KdVSR8zYJksX/YPj7EbyCUP8ENFaPFpsHAzoyAWqN4D7Xeg7PcGJs23/nLAGFcneBOpCQ=="
+  "signature": "uz3VQdmsXH94sSGpcCYX/zjWQk6e5UAzTbhuT2NZxkSeW5YeOryWeRW191lbexee7PnvB1+NvJCHrOa8WvKnAw=="
 }
