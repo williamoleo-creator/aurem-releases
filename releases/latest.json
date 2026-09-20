@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "manifestVersion": 1,
+    "status": "ready",
+    "version": "0.29.1",
+    "channel": "founder",
+    "issuedAt": "2026-09-20T01:36:06.517Z",
+    "rollout": {
+      "percentage": 100,
+      "autoApply": false,
+      "requireIdle": true,
+      "critical": false,
+      "rollbackOnHealthFailure": true,
+      "healthTimeoutSec": 45
+    },
+    "artifacts": [
+      {
+        "platform": "windows",
+        "kind": "installer-zip",
+        "url": "https://github.com/williamoleo-creator/aurem-releases/releases/download/v0.29.1/Aurem-Founder-0.29.1.zip",
+        "sha256": "sha256:6468a1c2a780e3b4656e1340da57e9f4b61aa6f96551b0fb788f58501775ef20",
+        "sizeBytes": 626416636,
+        "signerSha256": null
+      }
+    ]
+  },
+  "keyId": "aurem-release:101027a73ca9a271a8e50c769d38bbdc297eb6008449b2d67b96e18ddd8d7788",
+  "signature": "tT9fAnOv46KEMu3nBueqaIk0UhWcY2HHgUPLlBcTtpInTlBTeLHDtLJq7p+HuYAwaaKuJ3AC8t9zLr3paF6kDQ=="
+}

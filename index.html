@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#05070b" />
+  <meta name="description" content="Aurem — inteligência local-first para Windows, com Mesh opcional e controle do usuário." />
+  <title>Aurem — IA local para Windows</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="nav-shell">
+    <a class="brand" href="#top" aria-label="Aurem início">
+      <span class="brand-core">A</span>
+      <span><strong>AUREM</strong><small>LOCAL-FIRST AI</small></span>
+    </a>
+    <nav>
+      <a href="#today">Hoje</a>
+      <a href="#mesh">Mesh</a>
+      <a href="#security">Segurança</a>
+      <a href="#download">Download</a>
+    </nav>
+    <span class="network-pill"><i></i> FOUNDER RC</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">LOCAL AI × OPTIONAL MESH × HUMAN CONTROL</p>
+        <h1>Sua IA começa no seu PC.<br><em>A rede entra quando você autoriza.</em></h1>
+        <p class="lead">Aurem é uma inteligência pessoal local-first para Windows. Conversa e memória rodam no seu computador; a Aurem Mesh pode usar capacidade ociosa de outros nós para tarefas compatíveis, sempre com opt-in e limites visíveis.</p>
+        <div class="hero-actions">
+          <a class="cta primary" href="#download">Baixar Aurem para Windows</a>
+          <a class="cta secondary" href="#mesh">Como a Mesh funciona</a>
+        </div>
+        <div class="trust-row">
+          <span>Local-first</span>
+          <span>Contribuição opcional</span>
+          <span>Jobs assinados</span>
+          <span>Sem shell remoto genérico</span>
+        </div>
+      </div>
+      <aside class="command-card" aria-label="Estado da arquitetura Aurem">
+        <div class="panel-head"><span>AUREM // CORE</span><b>0.29.1 FOUNDER RC</b></div>
+        <div class="nexus-orb"><span>A</span></div>
+        <div class="telemetry">
+          <div><small>LOCAL BRAIN</small><strong>CPU / GPU ADAPTIVE</strong></div>
+          <div><small>MESH RELAY</small><strong>HTTPS + WAKE</strong></div>
+          <div><small>PAYLOAD</small><strong>AES-256-GCM</strong></div>
+          <div><small>CONTROL</small><strong>USER OPT-IN</strong></div>
+        </div>
+        <div class="signal-line"><span></span></div>
+        <p>Um Lead responde. Helpers podem trabalhar em paralelo. Aurem não divide cada token entre computadores pela Internet.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="today">
+      <div class="section-title">
+        <p class="kicker">O QUE FUNCIONA HOJE</p>
+        <h2>Produto real primeiro. Roadmap depois.</h2>
+        <p>O site agora separa claramente o que já existe do que ainda está em desenvolvimento.</p>
+      </div>
+      <div class="feature-grid three">
+        <article><span>01</span><h3>Chat local</h3><p>Modos Rápido, Pensar e Agente. Se ferramentas não estiverem disponíveis, o Agente continua conversando em vez de falhar.</p></article>
+        <article><span>02</span><h3>Hardware adaptativo</h3><p>CPU, GPU, RAM e threads são avaliados para evitar usar a máquina inteira sem necessidade. PCs modestos entram em modo conservador.</p></article>
+        <article><span>03</span><h3>Memória local</h3><p>Contexto e memória ficam no computador por padrão. Sincronização cloud é separada e configurável.</p></article>
+      </div>
+    </section>
+
+    <section class="section mesh-section" id="mesh">
+      <div class="section-title compact">
+        <p class="kicker">AUREM MESH</p>
+        <h2>Muitos PCs, sem fragmentar o cérebro.</h2>
+        <p>Uma tarefa interativa tem um Lead. Outros nós podem fazer crítica, compressão de contexto, avaliação ou outros helpers em paralelo.</p>
+      </div>
+      <div class="mesh-flow">
+        <div class="node-card"><b>SEU PC</b><small>Lead local · memória · interface</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="node-card core"><b>COGNITIVE FABRIC</b><small>Scheduler · desempenho · confiança</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="node-card"><b>NÓS AUXILIARES</b><small>Helpers · jobs isolados · opt-in</small></div>
+      </div>
+      <p class="mesh-note">Contribuição vem desligada. Realtime Wake também permanece desligado até o usuário autorizar a participação na Mesh.</p>
+    </section>
+
+    <section class="section" id="security">
+      <div class="section-title compact">
+        <p class="kicker">SEGURANÇA E CONTROLE</p>
+        <h2>O usuário sabe quando o PC participa.</h2>
+      </div>
+      <div class="feature-grid four">
+        <article><h3>Identity</h3><p>Cada nó possui identidade criptográfica própria.</p></article>
+        <article><h3>Signed jobs</h3><p>Controller e worker assinam pedidos e resultados.</p></article>
+        <article><h3>Encrypted payload</h3><p>Jobs usam X25519 + AES-256-GCM e o relay guarda pacotes opacos.</p></article>
+        <article><h3>Fleet segura</h3><p>Versão, hardware, saúde e erros operacionais podem ser analisados sem enviar conteúdo das conversas.</p></article>
+      </div>
+    </section>
+
+    <section class="section community-section">
+      <div class="section-title">
+        <p class="kicker">DESENVOLVIMENTO CONTÍNUO</p>
+        <h2>A máquina melhora sua função na rede sem reescrever o próprio Core.</h2>
+        <p>Aurem aprende desempenho por nó e capability. Atualizações do software continuam passando por release versionado, hash e assinatura — não por código arbitrário recebido de outro computador.</p>
+      </div>
+      <div class="plan-grid">
+        <article class="plan featured"><span>FOUNDATION</span><h3>Windows local-first</h3><p>Chat, memória, hardware adaptativo, Fleet e Mesh opcional.</p><strong>DISPONÍVEL NO RC</strong></article>
+        <article class="plan"><span>NEXT</span><h3>Mais inteligência</h3><p>Model selector maior, melhores helpers, roteamento por especialidade e evolução da experiência.</p><strong>ROADMAP</strong></article>
+        <article class="plan"><span>MOBILE</span><h3>Aurem no celular</h3><p>Cliente leve para acessar a mesma Aurem sem tentar colocar um modelo pesado em todo telefone.</p><strong>EM DESENVOLVIMENTO</strong></article>
+      </div>
+    </section>
+
+    <section class="beta-warning">
+      <div>
+        <span>FOUNDER RELEASE CANDIDATE</span>
+        <h2>0.29 está funcional, mas ainda não é o release público final.</h2>
+        <p>O build de Windows já roda localmente e passou pelos gates técnicos. A publicação pública continua aguardando o pacote final desta rodada e a etapa de assinatura/reputação do Windows.</p>
+      </div>
+      <b>REAL BUILD // CONTROLLED RELEASE</b>
+    </section>
+
+    <section class="section download-section" id="download">
+      <div class="section-title">
+        <p class="kicker">DOWNLOAD</p>
+        <h2>Aurem para Windows.</h2>
+        <p>O botão fica sempre visível. Ele é ativado automaticamente quando o manifesto público assinado aponta para um artifact liberado.</p>
+      </div>
+      <div class="download-grid" id="downloadGrid">
+        <article class="download-card" data-platform="windows">
+          <div><span class="platform-icon">PC</span><small>WINDOWS 10/11 · X64</small></div>
+          <h3>Aurem para Windows</h3>
+          <p>Instalador Founder com cérebro local leve, hardware adaptativo, Fleet e participação opcional na Aurem Mesh.</p>
+          <button disabled>Baixar Aurem para Windows</button>
+          <code>RC 0.29.0 pronto · publicação pública pendente</code>
+        </article>
+        <article class="download-card" data-platform="android">
+          <div><span class="platform-icon">A</span><small>MOBILE CLIENT</small></div>
+          <h3>Aurem para Android</h3>
+          <p>Cliente móvel leve para conversar com a Aurem e acompanhar tarefas. Não distribuído ainda.</p>
+          <button disabled>Android em desenvolvimento</button>
+          <code>nenhum APK público liberado</code>
+        </article>
+      </div>
+      <div class="release-status" id="releaseStatus">Founder channel // verificando release público…</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-core">A</span><span><strong>AUREM</strong><small>LOCAL-FIRST INTELLIGENCE</small></span></div>
+    <p><a href="transparency.html">Transparência da Mesh</a> · contribuição opcional · releases controlados.</p>
+    <span id="buildLabel">SITE // FOUNDER RC</span>
+  </footer>
+  <script src="app.js?v=20260919-prod1"></script>
+</body>
+</html>
