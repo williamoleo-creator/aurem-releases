@@ -2,9 +2,9 @@
   "manifest": {
     "manifestVersion": 1,
     "status": "ready",
-    "version": "0.29.2",
+    "version": "0.30.0",
     "channel": "founder",
-    "issuedAt": "2026-09-20T18:24:18.885Z",
+    "issuedAt": "2026-09-24T13:32:47.066Z",
     "rollout": {
       "percentage": 100,
       "autoApply": true,
@@ -17,21 +17,21 @@
       {
         "platform": "windows",
         "kind": "setup-exe",
-        "url": "https://github.com/williamoleo-creator/aurem-releases/releases/download/v0.29.2/Aurem-Setup-0.29.2.exe",
-        "sha256": "sha256:a48f15c6a91dc528b57e158fab36eb26610144bbffd0be498607505603e933ee",
+        "url": "https://github.com/williamoleo-creator/aurem-releases/releases/download/v0.30.0/Aurem-Setup-0.30.0.exe",
+        "sha256": "sha256:f31214a4af0878e2088949dd98758a52462e6a47a276866fb3d1acf793a297c3",
         "sizeBytes": 37888,
         "signerSha256": null
       },
       {
         "platform": "windows",
         "kind": "installer-zip",
-        "url": "https://github.com/williamoleo-creator/aurem-releases/releases/download/v0.29.2/Aurem-Founder-0.29.2.zip",
-        "sha256": "sha256:c45f5fa45e90c7dc6a8122962089a5137d253f8c3ad72ee80eab404a1f4a0a5e",
-        "sizeBytes": 626416759,
+        "url": "https://github.com/williamoleo-creator/aurem-releases/releases/download/v0.30.0/Aurem-Founder-0.30.0.zip",
+        "sha256": "sha256:0b4aa831c6dc4c49baf26e8584fe0ca61e2c0fcbc0327e63df9af94592f13ecb",
+        "sizeBytes": 626425638,
         "signerSha256": null
       }
     ]
   },
   "keyId": "aurem-release:bee72f9990cbf87da213590daa4d5f41da4640ae8949419acbd0858f49d51b5c",
-  "signature": "uz3VQdmsXH94sSGpcCYX/zjWQk6e5UAzTbhuT2NZxkSeW5YeOryWeRW191lbexee7PnvB1+NvJCHrOa8WvKnAw=="
+  "signature": "g/wixqluxFdcZD5JRLPcluqoVceGI7b9d46Zp1TME6kAsgsSJHVt0EeiJWC7THbXXSdauFa+Zk+SPazXcJlbBA=="
 }
