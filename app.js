@@ -43,11 +43,11 @@ async function loadRelease() {
     const release = payload.manifest || payload;
     if (release.status !== 'ready') {
       const version = release.version ? ` // ${release.version}` : '';
-      releaseStatus.textContent = `Founder channel${version} // release candidate validado // publicação pública aguardando assinatura Windows`;
+      releaseStatus.textContent = `Aurem${version} · versão em validação · assinatura do Windows ainda pendente`;
       return;
     }
     if (!payload.signature || !payload.keyId) {
-      releaseStatus.textContent = 'Founder channel // release bloqueado: manifesto sem assinatura';
+      releaseStatus.textContent = 'Aurem · download indisponível: manifesto sem assinatura';
       return;
     }
     for (const card of cards) {
@@ -57,9 +57,9 @@ async function loadRelease() {
         || artifacts.find((item) => item.platform === platform);
       if (artifact) activateArtifact(card, artifact, release);
     }
-    releaseStatus.textContent = `Founder channel // ${release.version} // assinatura presente // ${payload.keyId.slice(0, 28)}…`;
+    releaseStatus.textContent = `Aurem ${release.version} · release verificada · ${payload.keyId.slice(0, 20)}…`;
   } catch (error) {
-    releaseStatus.textContent = `Founder channel // releases ainda não publicados (${error.message})`;
+    releaseStatus.textContent = `Não foi possível verificar a versão pública (${error.message})`;
   }
 }
 
